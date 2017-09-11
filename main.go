@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	. "pgo"
+
+	. "github.com/micln/go-utils"
 
 	"flag"
 	"io"
@@ -40,7 +41,7 @@ func main() {
 	isJson := flag.Bool(`json`, false, `parse the file as json`)
 	isTab := flag.Bool(`t`, false, `parse the file like 'url(\t)filename'`)
 
-	filename := flag.String(`f`, ``, `filename. the file will be download to "Downloads/`+Date(`Ymd`)+`/filename"`)
+	filename := flag.String(`f`, ``, `source file, read urls from here`)
 
 	tool := flag.String(`tool`, ``, `choose the download tools. support [curl, aria2]`)
 

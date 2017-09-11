@@ -11,8 +11,9 @@ import (
 	"time"
 
 	"glash/crawler"
-	. "pgo"
 	"strings"
+
+	. "github.com/micln/go-utils"
 )
 
 type Job struct {

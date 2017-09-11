@@ -21,7 +21,7 @@ Usage of ./glash:
   -d	start http server.
 	listen on http://0.0.0.0:10087?url=xx&filename=xx
   -f string
-    	filename. the file will be download to "Downloads/20161209/filename"
+    	source file, read urls from here
   -json
     	parse the file as json
   -t	parse the file like 'url(\t)filename'
@@ -37,7 +37,7 @@ Usage of ./glash:
 ./glash -d
 
 # use json file
-./glash -f ~/test.json -json -tool aria2
+./glash -f ~/test.json -json
 
 # use aria2c
 ./glash -f ~/test.json -json -tool aria2
